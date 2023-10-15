@@ -1,0 +1,12 @@
+SERVICE UP:
+~ "docker-compose up -d"
+
+SERVICE DOWN:
+~ "docker-compose down"
+~ "docker container prune -f"
+~ "docker image prune -f"
+
+REBUILD:
+~ Do (BACKUP DATABASE)
+~ Do (SERVICE DOWN)
+~ Do (SERVICE UP)

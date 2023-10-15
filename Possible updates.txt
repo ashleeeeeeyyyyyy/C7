@@ -1,0 +1,22 @@
+1. Login System
+- If possible to lagay tayo, if di ka na busy haha extra function lang naman
+
+2. Home
+- Iniisip ko Total sales for the day, ito naman kung kaya mo = total sales for the whole month (so every day add lang yung sales sa total month)
+
+3. Inventory
+- Okay pa atm
+
+4. Transaction
+- Gawing editable rin yung total price, kasi minsan yung discounts sa total binabawas hindi sa per item
+- May bug parin minsan yung pagsend ng transaction, minsan nadodoble parin yung input kahit may alert na
+
+5. Transaction details
+- Gawing editable sana, para kung may changes or kunwari may deposit na cheque ma-eedit ko yung notes part
+- Change UI ng transaction details? yung mas modern? haha
+
+6. Employees
+- Okay pa atm
+
+7. Supplier
+- Okay pa atm
