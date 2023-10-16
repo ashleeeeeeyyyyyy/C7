@@ -1,10 +1,11 @@
-FROM node:13.1.0-alpine as build
+FROM node:20-alpine3.17 as build
 
 WORKDIR /usr/app
 ENV PATH /usr/app/node_modules/.bin:$PATH
 COPY package.json /usr/app/package.json
 RUN npm install --silent
 RUN npm install react-scripts@3.0.1 -g --silent
+# RUN export NODE_OPTIONS=--openssl-legacy-provider && yarn build && yarn install --production --ignore-scripts --prefer-offline
 COPY . /usr/app
 RUN npm run build
 

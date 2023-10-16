@@ -1,4 +1,4 @@
-version : '3'
+version: "3"
 
 services:
   mysql:
@@ -22,6 +22,7 @@ services:
       PMA_HOST: mysql
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 300M
     restart: always
     ports:
       - 8080:80
@@ -37,7 +38,7 @@ services:
     ports:
       - 8082:80
     command: ["gunicorn", "-b", "0.0.0.0:80", "server:app"]
-  
+
   web_app:
     build: ./web_app
     container_name: web_app
